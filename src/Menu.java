@@ -27,7 +27,7 @@ public class Menu {
         switch (opcaoMenu) {
             case 1:
                 System.out.println("Digite o codigo do produto");
-                codigo = in.next();
+                codigo = in.next().toUpperCase();
                 
                 
                 break;
