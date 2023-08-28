@@ -29,6 +29,7 @@ public class Menu {
                 System.out.println("Digite o codigo do produto");
                 codigo = in.next();
                 
+                
                 break;
 
             case 2:
