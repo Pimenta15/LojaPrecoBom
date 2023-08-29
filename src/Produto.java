@@ -1,3 +1,4 @@
+//Questão 1
 public class Produto {
     
     private String codigo;
@@ -22,7 +23,7 @@ public class Produto {
 
     }
 
-    public void aplicarDesconto(int percentual){
+    public void aplicarDesconto(double percentual){
         
         double desconto = (percentual/100);
         this.preco = this.preco - (desconto*this.preco);
@@ -89,8 +90,8 @@ public class Produto {
         return "Codigo do Produto: "+ codigo+ "\nDescrição: "+ descricao+ "\nFornecedor: "+ fornecedor+ "\nPreço: "+ preco + "\n Quantidade do Estoque: "+ estoque;
     }
 
-    public int compareTo(Produto outro){
-        if(this.codigo.equals(outro.getCodigo())== true){
+    public int compareTo(String codigo){
+        if(this.codigo.equals(codigo)== true){
             return 1;
         }else{
             return -1;
